@@ -1,0 +1,13 @@
+[package]
+name = "my_bot"
+version = "0.1.0"
+edition = "2021"
+
+[[bin]]
+name = "my_bot"
+path = "src/main.rs"
+
+[dependencies]
+kartoffel = { git = "https://github.com/Patryk27/kartoffels" }
+# burn = { version="0.13.2", default-features = false }
+

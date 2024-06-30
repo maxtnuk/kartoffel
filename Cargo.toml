@@ -1,11 +1,15 @@
-[package]
-name = "kartoffel-example"
-version = "0.1.0"
+[workspace]
+members = [
+    "crates/train",
+]
+exclude = ["crates/my_bot"]
+resolver = "2"
+
+[workspace.package]
 edition = "2021"
+version = "0.1.0"
+readme = "README.md"
+license = "MIT OR Apache-2.0"
 
-[[bin]]
-name = "kartoffel"
-path = "src/main.rs"
+[workspace.dependencies]
 
-[dependencies]
-kartoffel = { git = "https://github.com/Patryk27/kartoffels" }
