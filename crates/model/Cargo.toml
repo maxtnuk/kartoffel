@@ -1,10 +1,9 @@
 [package]
-name = "train"
+name = "model"
 edition.workspace = true
 version.workspace = true
 readme.workspace = true
 license.workspace = true
 
 [dependencies]
-burn = { workspace = true, features = ["train"]}
-model = { path = "../model" }
+burn = { version = "0.13.2", default-features = false}

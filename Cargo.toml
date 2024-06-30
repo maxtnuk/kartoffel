@@ -1,5 +1,5 @@
 [workspace]
-members = [
+members = [ "crates/model",
     "crates/train",
 ]
 exclude = ["crates/my_bot"]
@@ -12,4 +12,4 @@ readme = "README.md"
 license = "MIT OR Apache-2.0"
 
 [workspace.dependencies]
-
+burn = { version="0.13.2" }
